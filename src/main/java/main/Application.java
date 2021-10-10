@@ -10,7 +10,7 @@ public class Application {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(Config.class);
 
         Car car = ctx.getBean(Car.class);
-        System.out.println("Car Engine in HP " + car.showEngineHP());
+        System.out.println("Car Engine in HP: this is a test" + car.showEngineHP());
 
         ((AnnotationConfigApplicationContext)ctx).close();
     }
